@@ -1,0 +1,12 @@
+{
+	"interfaces": {
+		"hostname": "127.0.0.1",
+		"port": 1080
+	},
+	"system": {
+		"io-threads": 4
+	},
+	"log": {
+		"file": "shinysocks_%5N.log"
+	}
+}
