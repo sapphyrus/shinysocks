@@ -50,7 +50,7 @@ int main(int argc, char **argv) {
     vector<unique_ptr<Listener>> listeners;
 
     {
-        std::string conf_file = "shinysocks.conf";
+        std::string conf_file = "shinysocks.json";
 
         po::options_description general("General Options");
 
