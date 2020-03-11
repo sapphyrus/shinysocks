@@ -1,7 +1,7 @@
 #include <iostream>
 #include <boost/program_options.hpp>
 #include <boost/program_options.hpp>
-#include <boost/property_tree/info_parser.hpp>
+#include <boost/property_tree/json_parser.hpp>
 #include <boost/filesystem.hpp>
 #include <boost/log/core.hpp>
 #include <boost/log/trivial.hpp>
@@ -83,7 +83,7 @@ int main(int argc, char **argv) {
                 << "' does not exist.";
             return -1;
         }
-        read_info(conf_file, opts);
+        read_json(conf_file, opts);
 
         if (auto log_file = opts.get_optional<string>("log.file")) {
             cout << "Opening log-file: " << *log_file << endl;
